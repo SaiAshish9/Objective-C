@@ -79,7 +79,7 @@ int main(int argc, const char * argv[]) {
         
        NSLog(@"%@",cat.name);
        NSLog(@"180 lbs = %.2f kg", [dog weightInKg:180]);
-       NSLog(@"3 + 5 = %d", [dog getSum:3, nextNumber:5 ]);
+       NSLog(@"3 + 5 = %d", [dog getSum:3 nextNumber:5 ]);
        NSLog(@"%@", [dog talkToMe:@"Derek"]);
 
         
