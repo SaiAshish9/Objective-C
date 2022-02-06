@@ -8,6 +8,8 @@
 #import <Foundation/Foundation.h>
 #import "Animal.h"
 #import "Koala.h"
+#import "Animal+Exam.h"
+#import "Dog.h"
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
@@ -82,11 +84,42 @@ int main(int argc, const char * argv[]) {
        NSLog(@"180 lbs = %.2f kg", [dog weightInKg:180]);
        NSLog(@"3 + 5 = %d", [dog getSum:3 nextNumber:5 ]);
        NSLog(@"%@", [dog talkToMe:@"Derek"]);
+        
+       Koala *herbie = [[Koala alloc]initWithName:@"Herbie"];
+       NSLog(@"%@",[herbie talkToMe:@"Derek"]);
+       NSLog(@"Did %@ receive shots: %d",herbie.name,[herbie checkedByVet]);
+       [herbie getShots];
+       [dog getInfo];
+       [herbie lookCute];
+       [herbie performTrick];
+        
+       float (^getArea) (float height, float width);
+        
+       getArea = ^float(float width, float height){
+           return width * height;
+       };
+    
+       NSLog(@"Area of 3 width and 50 height: %.1f", getArea(3,50));
+       
+        enum Ratings{
+            Poor = 1,
+            Ok = 2,
+            great = 5
+        };
+        
+        enum Ratings matrixRating = great;
+        
+        NSLog(@"Matrix : %u",matrixRating);
+        
+        Dog *grover = [[Dog alloc]initWithName:@"Grover"];
+        NSArray *animals = [[NSArray alloc]initWithObjects:herbie,grover, nil];
+        
+        id object1 = [animals objectAtIndex:0];
+        id object2 = [animals objectAtIndex:1];
+        
+        [object1 makeSound];
+        [object2 makeSound];
 
-        
-        Koala *herbie = [[Koala alloc]initWithName:@"Herbie"];
-        
-        NSLog(@"%@",[herbie talkToMe:@"Derek"]);
     }
     return 0;
 }

@@ -4,6 +4,7 @@
 //  Created by Sai Ashish Darapureddy on 06/02/22.
 //
 #import "Animal.h"
+#import "Animal+Vet.h"
 
 @implementation Animal
 
@@ -27,6 +28,7 @@
 
 -(void) getInfo{
 NSLog(@"Random");
+[self getExamResults];
 }
 
 -(float) weightInKg:(float)weightInLbs {
@@ -40,6 +42,10 @@ NSLog(@"Random");
 -(NSString *)talkToMe:(NSString *)myName{
     NSString *response = [NSString stringWithFormat:@"Hello %@", myName];
     return response;
+}
+
+-(void) makeSound{
+    NSLog(@"Grrrr");
 }
 
 @end

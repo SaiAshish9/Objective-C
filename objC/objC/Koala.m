@@ -18,8 +18,19 @@
     NSLog(@"%@ perfoms", self.name);
 }
 
+-(void) lookCute{
+    NSLog(@")%@ acts super cute", self.name);
+}
+
+- (void)performCute {
+    
+}
+
+
 -(void) makeSound{
     NSLog(@"%@ sounds", self.name);
 }
+
+
 
 @end

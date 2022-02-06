@@ -9,6 +9,9 @@
 /* Begin PBXBuildFile section */
 		973245A427AFC04C00647439 /* Animal.m in Sources */ = {isa = PBXBuildFile; fileRef = 973245A327AFC04C00647439 /* Animal.m */; };
 		973245AA27AFD94000647439 /* Koala.m in Sources */ = {isa = PBXBuildFile; fileRef = 973245A927AFD94000647439 /* Koala.m */; };
+		973245B027B0016300647439 /* Animal+Exam.m in Sources */ = {isa = PBXBuildFile; fileRef = 973245AF27B0016300647439 /* Animal+Exam.m */; };
+		973245B327B0057F00647439 /* Animal+Vet.m in Sources */ = {isa = PBXBuildFile; fileRef = 973245B227B0057F00647439 /* Animal+Vet.m */; };
+		973245B727B00CBF00647439 /* Dog.m in Sources */ = {isa = PBXBuildFile; fileRef = 973245B627B00CBF00647439 /* Dog.m */; };
 		974857EA27AE975C00A04C5A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 974857E927AE975C00A04C5A /* main.m */; };
 /* End PBXBuildFile section */
 
@@ -29,6 +32,13 @@
 		973245A327AFC04C00647439 /* Animal.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Animal.m; sourceTree = "<group>"; };
 		973245A827AFD94000647439 /* Koala.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Koala.h; sourceTree = "<group>"; };
 		973245A927AFD94000647439 /* Koala.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Koala.m; sourceTree = "<group>"; };
+		973245AE27B0016300647439 /* Animal+Exam.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Animal+Exam.h"; sourceTree = "<group>"; };
+		973245AF27B0016300647439 /* Animal+Exam.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Animal+Exam.m"; sourceTree = "<group>"; };
+		973245B127B0057F00647439 /* Animal+Vet.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Animal+Vet.h"; sourceTree = "<group>"; };
+		973245B227B0057F00647439 /* Animal+Vet.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "Animal+Vet.m"; sourceTree = "<group>"; };
+		973245B427B007FE00647439 /* BeautyContest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BeautyContest.h; sourceTree = "<group>"; };
+		973245B527B00CBF00647439 /* Dog.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Dog.h; sourceTree = "<group>"; };
+		973245B627B00CBF00647439 /* Dog.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Dog.m; sourceTree = "<group>"; };
 		974857E627AE975C00A04C5A /* objC */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = objC; sourceTree = BUILT_PRODUCTS_DIR; };
 		974857E927AE975C00A04C5A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -68,6 +78,13 @@
 				973245A327AFC04C00647439 /* Animal.m */,
 				973245A827AFD94000647439 /* Koala.h */,
 				973245A927AFD94000647439 /* Koala.m */,
+				973245AE27B0016300647439 /* Animal+Exam.h */,
+				973245AF27B0016300647439 /* Animal+Exam.m */,
+				973245B127B0057F00647439 /* Animal+Vet.h */,
+				973245B227B0057F00647439 /* Animal+Vet.m */,
+				973245B427B007FE00647439 /* BeautyContest.h */,
+				973245B527B00CBF00647439 /* Dog.h */,
+				973245B627B00CBF00647439 /* Dog.m */,
 			);
 			path = objC;
 			sourceTree = "<group>";
@@ -98,7 +115,7 @@
 		974857DE27AE975C00A04C5A /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 1250;
+				LastUpgradeCheck = 1320;
 				TargetAttributes = {
 					974857E527AE975C00A04C5A = {
 						CreatedOnToolsVersion = 12.5.1;
@@ -128,6 +145,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				973245B727B00CBF00647439 /* Dog.m in Sources */,
+				973245B027B0016300647439 /* Animal+Exam.m in Sources */,
+				973245B327B0057F00647439 /* Animal+Vet.m in Sources */,
 				973245AA27AFD94000647439 /* Koala.m in Sources */,
 				974857EA27AE975C00A04C5A /* main.m in Sources */,
 				973245A427AFC04C00647439 /* Animal.m in Sources */,
@@ -251,6 +271,7 @@
 		974857EE27AE975C00A04C5A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -259,6 +280,7 @@
 		974857EF27AE975C00A04C5A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
