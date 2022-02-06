@@ -20,11 +20,9 @@ int main(int argc, const char * argv[]) {
         NSString *quote = @"abcdsjskladhkjsadhkjhsad";
         NSLog(@"size %d",(int)[quote length]);
         NSLog(@"%c",[quote characterAtIndex:5]);
-        
         char *name = "Sai";
         NSString *myName = [NSString stringWithFormat:@"%s",name];
 //        immutable object
-        
         BOOL isStringEqual = [quote isEqualToString:myName];
         printf("equal: %d\n",isStringEqual);
         const char *uCString = [[myName uppercaseString]UTF8String];
@@ -41,9 +39,7 @@ int main(int argc, const char * argv[]) {
 //        printf("%s",newQuote);
 
         NSMutableString *groceryList = [NSMutableString stringWithCapacity:50];
-        
         [groceryList appendFormat:@"%s","ABCDEF"];
-        
         NSLog(@"%@",groceryList);
         [groceryList deleteCharactersInRange:NSMakeRange(0, 2)];
         NSLog(@"%@",groceryList);
@@ -51,9 +47,7 @@ int main(int argc, const char * argv[]) {
         NSLog(@"%@",groceryList);
         [groceryList replaceCharactersInRange:NSMakeRange(1, 1) withString:@"Orange"];
         NSLog(@"%@",groceryList);
-        
         NSArray *officeSupplies = @[@"A",@"B",@"C"];
-
         NSLog(@"First: %@",officeSupplies[0]);
         NSLog(@"Office Supplies: %@",officeSupplies);
         BOOL containsItem = [officeSupplies containsObject:@"A"];
