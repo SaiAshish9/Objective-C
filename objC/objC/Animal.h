@@ -11,7 +11,19 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface Animal : NSObject
 
-@property
+//@property (readonly) NSString *name;
+@property NSString *name;
+@property NSString *favFood;
+@property NSString *sound;
+@property float weight;
+
+-(instancetype) initWithName:(NSString*) defaultName;
+-(void) getInfo;
+-(float) weightInKg;
+-(NSString *) talkToMe: (NSString *) myName;
+-(int) getSum: (int) num1
+   nextNumber: (int) num2;
+
 
 @end
 
