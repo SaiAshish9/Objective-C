@@ -11,7 +11,7 @@ int main(int argc, const char * argv[]) {
     @autoreleasepool {
 //        It is used to remove unwanted objects and signals us when objects are no longer
 //        needed
-//        int char BOOL NSString NSMutableString  NSLog NSRange NSMakeRange NSArray
+//        int char BOOL NSString NSMutableString NSLog NSRange NSMakeRange NSArray
 
         NSLog(@"Hello, World!");
         NSString *nothing = nil;
@@ -66,18 +66,13 @@ int main(int argc, const char * argv[]) {
        [heroes addObject:@"B"];
        [heroes addObject:@"C"];
        [heroes addObject:@"D"];
-
        [heroes insertObject:@"E" atIndex:2];
-
        NSLog(@"%@", heroes);
-
        [heroes removeObject:@"D"];
        [heroes removeObjectAtIndex:0];
        [heroes removeObjectIdenticalTo:@"A" inRange:NSMakeRange(0,1)];
-
        for(int i=0; i < [heroes count]; i++){
            NSLog(@"%@",heroes[i]);
-            
        }
 
     }

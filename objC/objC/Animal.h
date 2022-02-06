@@ -11,6 +11,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 @interface Animal : NSObject
 
+@property
+
 @end
 
 NS_ASSUME_NONNULL_END
