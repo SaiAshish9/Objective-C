@@ -7,6 +7,7 @@
 
 #import <Foundation/Foundation.h>
 #import "Animal.h"
+#import "Koala.h"
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
@@ -83,6 +84,9 @@ int main(int argc, const char * argv[]) {
        NSLog(@"%@", [dog talkToMe:@"Derek"]);
 
         
+        Koala *herbie = [[Koala alloc]initWithName:@"Herbie"];
+        
+        NSLog(@"%@",[herbie talkToMe:@"Derek"]);
     }
     return 0;
 }
