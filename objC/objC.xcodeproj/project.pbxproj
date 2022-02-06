@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		973245A427AFC04C00647439 /* Animal.m in Sources */ = {isa = PBXBuildFile; fileRef = 973245A327AFC04C00647439 /* Animal.m */; };
 		974857EA27AE975C00A04C5A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 974857E927AE975C00A04C5A /* main.m */; };
 /* End PBXBuildFile section */
 
@@ -23,6 +24,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		973245A227AFC04C00647439 /* Animal.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Animal.h; sourceTree = "<group>"; };
+		973245A327AFC04C00647439 /* Animal.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Animal.m; sourceTree = "<group>"; };
 		974857E627AE975C00A04C5A /* objC */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = objC; sourceTree = BUILT_PRODUCTS_DIR; };
 		974857E927AE975C00A04C5A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -58,6 +61,8 @@
 			isa = PBXGroup;
 			children = (
 				974857E927AE975C00A04C5A /* main.m */,
+				973245A227AFC04C00647439 /* Animal.h */,
+				973245A327AFC04C00647439 /* Animal.m */,
 			);
 			path = objC;
 			sourceTree = "<group>";
@@ -119,6 +124,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				974857EA27AE975C00A04C5A /* main.m in Sources */,
+				973245A427AFC04C00647439 /* Animal.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
