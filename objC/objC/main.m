@@ -11,8 +11,7 @@ int main(int argc, const char * argv[]) {
     @autoreleasepool {
 //        It is used to remove unwanted objects and signals us when objects are no longer
 //        needed
-        
-//        int char NSRange BOOL NSString NSLog NSMakeRange NSMutableString
+//        int char BOOL NSString NSMutableString  NSLog NSRange NSMakeRange NSArray
 
         NSLog(@"Hello, World!");
         NSString *nothing = nil;
@@ -52,9 +51,27 @@ int main(int argc, const char * argv[]) {
         NSLog(@"%@",groceryList);
         [groceryList replaceCharactersInRange:NSMakeRange(1, 1) withString:@"Orange"];
         NSLog(@"%@",groceryList);
+        NSArray *officeSupplies = @[@"A",@"B",@"C"];
+        NSLog(@"First: %@",officeSupplies[0]);
+        NSLog(@"Office Supplies: %@",officeSupplies);
+        BOOL containsItem = [officeSupplies containsObject:@"A"];
+        NSLog(@"Need Pencils : %d",containsItem);
+        NSLog(@"Total : %d",(int)[officeSupplies count]);
+        NSLog(@"Index of A is at %lu",(unsigned long)[officeSupplies indexOfObject:@"A"]);
+        NSMutableArray *heroes = [NSMutableArray arrayWithCapacity:5];
+        [heroes addObject:@"A"];
+        [heroes addObject:@"B"];
+        [heroes addObject:@"C"];
+        [heroes addObject:@"D"];
+        [heroes insertObject:@"E" atIndex:2];
+        NSLog(@"%@", heroes);
+        [heroes removeObject:@"D"];
+        [heroes removeObjectAtIndex:0];
+        [heroes removeObjectIdenticalTo:@"A" inRange: NSMakeRange(0,1)];
+       for(int i=0; i < [heroes count]; i++){
+           NSLog(@"%@",heroes[i]);
+       }
 
-        
-        
     }
     return 0;
 }
