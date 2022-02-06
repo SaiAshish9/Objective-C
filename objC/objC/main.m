@@ -6,6 +6,7 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "Animal.h"
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
@@ -68,7 +69,20 @@ int main(int argc, const char * argv[]) {
        for(int i=0; i < [heroes count]; i++){
            NSLog(@"%@",heroes[i]);
        }
+        
+       Animal *dog = [[Animal alloc] init];
+       [dog getInfo];
+       NSLog(@"The dogs name is %@", [dog name]);
+       [dog setName:@"Spot"];
+        
+       Animal *cat = [[Animal alloc]initWithName:@"Meow"];
+        
+       NSLog(@"%@",cat.name);
+       NSLog(@"180 lbs = %.2f kg", [dog weightInKg:180]);
+       NSLog(@"3 + 5 = %d", [dog getSum:3, nextNumber:5 ]);
+       NSLog(@"%@", [dog talkToMe:@"Derek"]);
 
+        
     }
     return 0;
 }
