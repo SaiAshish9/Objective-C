@@ -9,6 +9,6 @@
 
 @interface ViewController : UIViewController
 
+@property (strong, nonatomic) IBOutlet UITableView *myTableView;
 
 @end
-

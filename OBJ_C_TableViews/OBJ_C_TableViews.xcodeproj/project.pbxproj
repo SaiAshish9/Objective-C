@@ -65,8 +65,7 @@
 				97AAEE3E27B3FB3700816E5E /* AppDelegate.m */,
 				97AAEE4027B3FB3700816E5E /* SceneDelegate.h */,
 				97AAEE4127B3FB3700816E5E /* SceneDelegate.m */,
-				97AAEE4327B3FB3700816E5E /* ViewController.h */,
-				97AAEE4427B3FB3700816E5E /* ViewController.m */,
+				97AAEE5727B3FB5E00816E5E /* Controller */,
 				97AAEE4627B3FB3700816E5E /* Main.storyboard */,
 				97AAEE4927B3FB3800816E5E /* Assets.xcassets */,
 				97AAEE4B27B3FB3800816E5E /* LaunchScreen.storyboard */,
@@ -74,6 +73,15 @@
 				97AAEE4F27B3FB3800816E5E /* main.m */,
 			);
 			path = OBJ_C_TableViews;
+			sourceTree = "<group>";
+		};
+		97AAEE5727B3FB5E00816E5E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				97AAEE4327B3FB3700816E5E /* ViewController.h */,
+				97AAEE4427B3FB3700816E5E /* ViewController.m */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
