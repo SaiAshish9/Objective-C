@@ -7,8 +7,12 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>
+//@interface ViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>
+//@property (strong, nonatomic) IBOutlet UITableView *myTableView;
+//@end
 
-@property (strong, nonatomic) IBOutlet UITableView *myTableView;
+@interface ViewController : UIViewController
+
+
 
 @end
