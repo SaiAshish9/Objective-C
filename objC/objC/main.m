@@ -12,6 +12,14 @@
 #import "Dog.h"
 
 // stringWithFormat, uppercaseString, characterAtIndex, stringByAppendingString, rangeOfString, stringWithCapacity
+// appendFormat, deleteCharactersInRange:NSMakeRange(0, 2), insertString:@" , Apple" atIndex:1
+// replaceCharactersInRange:NSMakeRange(1, 1) withString:@"Orange", x[0], containsObject:@"A", indexOfObject:@"A",
+// (int)[officeSupplies count]
+// [NSMutableArray arrayWithCapacity:5];  addObject:@"A" insertObject:@"E" atIndex:2 removeObjectAtIndex:0
+// removeObject removeObjectIdenticalTo:@"A" inRange:NSMakeRange(0,1)];
+//  for(int i=0; i < [heroes count]; i++){
+//        NSLog(@"%@",heroes[i]);
+//    }
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
