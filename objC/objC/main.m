@@ -11,7 +11,7 @@
 #import "Animal+Exam.h"
 #import "Dog.h"
 
-// stringWithFormat, uppercaseString, characterAtIndex, stringByAppendingString, rangeOfString
+// stringWithFormat, uppercaseString, characterAtIndex, stringByAppendingString, rangeOfString, stringWithCapacity
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
