@@ -11,6 +11,8 @@
 #import "Animal+Exam.h"
 #import "Dog.h"
 
+// stringWithFormat, uppercaseString, characterAtIndex, stringByAppendingString, rangeOfString
+
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
 //        It is used to remove unwanted objects and signals us when objects are no longer
@@ -41,7 +43,6 @@ int main(int argc, const char * argv[]) {
 //        NSRange range = NSMakeRange(42, 1);
 //        const char *newQuote = [[wholeQuote stringByReplacingCharactersInRange:range withString:@"Sai9" ]UTF8String];
 //        printf("%s",newQuote);
-
         NSMutableString *groceryList = [NSMutableString stringWithCapacity:50];
         [groceryList appendFormat:@"%s","ABCDEF"];
         NSLog(@"%@",groceryList);
@@ -58,7 +59,6 @@ int main(int argc, const char * argv[]) {
         NSLog(@"Need Pencils : %d",containsItem);
         NSLog(@"Total : %d",(int)[officeSupplies count]);
         NSLog(@"Index of A is at %lu",(unsigned long)[officeSupplies indexOfObject:@"A"]);
-
        NSMutableArray *heroes = [NSMutableArray arrayWithCapacity:5];
        [heroes addObject:@"A"];
        [heroes addObject:@"B"];
@@ -72,19 +72,15 @@ int main(int argc, const char * argv[]) {
        for(int i=0; i < [heroes count]; i++){
            NSLog(@"%@",heroes[i]);
        }
-        
        Animal *dog = [[Animal alloc] init];
        [dog getInfo];
        NSLog(@"The dogs name is %@", [dog name]);
        [dog setName:@"Spot"];
-        
        Animal *cat = [[Animal alloc]initWithName:@"Meow"];
-        
        NSLog(@"%@",cat.name);
        NSLog(@"180 lbs = %.2f kg", [dog weightInKg:180]);
        NSLog(@"3 + 5 = %d", [dog getSum:3 nextNumber:5 ]);
        NSLog(@"%@", [dog talkToMe:@"Derek"]);
-        
        Koala *herbie = [[Koala alloc]initWithName:@"Herbie"];
        NSLog(@"%@",[herbie talkToMe:@"Derek"]);
        NSLog(@"Did %@ receive shots: %d",herbie.name,[herbie checkedByVet]);
@@ -92,34 +88,24 @@ int main(int argc, const char * argv[]) {
        [dog getInfo];
        [herbie lookCute];
        [herbie performTrick];
-        
        float (^getArea) (float height, float width);
-        
        getArea = ^float(float width, float height){
            return width * height;
        };
-    
        NSLog(@"Area of 3 width and 50 height: %.1f", getArea(3,50));
-       
         enum Ratings{
             Poor = 1,
             Ok = 2,
             great = 5
         };
-        
         enum Ratings matrixRating = great;
-        
         NSLog(@"Matrix : %u",matrixRating);
-        
         Dog *grover = [[Dog alloc]initWithName:@"Grover"];
         NSArray *animals = [[NSArray alloc]initWithObjects:herbie,grover, nil];
-        
         id object1 = [animals objectAtIndex:0];
         id object2 = [animals objectAtIndex:1];
-        
         [object1 makeSound];
         [object2 makeSound];
-
     }
     return 0;
 }
