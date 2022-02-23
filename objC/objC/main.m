@@ -11,7 +11,7 @@
 #import "Animal+Exam.h"
 #import "Dog.h"
 
-// stringWithFormat, uppercaseString, characterAtIndex, stringByAppendingString, rangeOfString, stringWithCapacity
+// stringWithFormat, uppercaseString,(int)[quote length], characterAtIndex, stringByAppendingString, rangeOfString, stringWithCapacity
 // appendFormat, deleteCharactersInRange:NSMakeRange(0, 2), insertString:@" , Apple" atIndex:1
 // replaceCharactersInRange:NSMakeRange(1, 1) withString:@"Orange", x[0], containsObject:@"A", indexOfObject:@"A",
 // (int)[officeSupplies count]
