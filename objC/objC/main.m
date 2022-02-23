@@ -20,6 +20,7 @@
 //  for(int i=0; i < [heroes count]; i++){
 //        NSLog(@"%@",heroes[i]);
 //    }
+// objectAtIndex:0
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
