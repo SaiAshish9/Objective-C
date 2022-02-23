@@ -114,3 +114,5 @@ ship.h
 }
 @end
 ```
+
+https://code.tutsplus.com/tutorials/objective-c-succinctly-categories-and-extensions--mobile-22016
