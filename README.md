@@ -1,5 +1,5 @@
 # Objective-C
-Categories, Objects , Protocols, Inheriatnce, Anonymous Functions And Garbage Collection
+Categories, Extensions, Objects , Protocols, Inheritance, Anonymous Functions And Garbage Collection
 
 ```
 #import <Foundation/Foundation.h>
